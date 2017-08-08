@@ -1,0 +1,18 @@
+﻿<div class="well">students Page</div>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr class="bg-primary" style="color:white;font-weight:bold;">
+            <td>Order Id</td>
+            <td>Unit Price</td>
+            <td>Quantity</td>
+            <td>Discount</td>
+        </tr>
+        <tr ng-repeat="product in products">
+            <td>{{product.orderId}}</td>
+            <td>{{product.unitPrice}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.discount}}</td>
+        </tr>
+    </table>
+
+</div>
