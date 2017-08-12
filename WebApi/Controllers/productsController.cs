@@ -23,6 +23,11 @@ namespace WebApi.Controllers
             var products = await _context.Products.
                 Include(x => x.OrderDetails).
                 ToListAsync();
+            foreach (var item in products)
+            {
+              var tt=  item.ProductName.LastIndexOf(".");
+                
+            }
             return Ok(products);
         }
 

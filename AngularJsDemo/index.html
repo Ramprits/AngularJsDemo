@@ -2,10 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo">
 <head>
     <title>index</title>
+    <base href="/" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/demo.css" rel="stylesheet" />
     <link href="Content/now-ui-kit.css" rel="stylesheet" />
-    <base href="/" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
+    <style>
+        td::first-letter {
+            text-transform: uppercase;
+        }
+        td::before  {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-toggleable-md bg-primary">
@@ -24,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item" active-link="active">
-                        <a class="nav-link" href="home">
+                        <a class="nav-link" href="home" >
                             Home
                         </a>
                     </li>

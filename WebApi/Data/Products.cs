@@ -16,7 +16,6 @@ namespace WebApi.Data
         [Key]
         public int ProductId { get; set; }
         [Required]
-        [MaxLength(40)]
         public string ProductName { get; set; }
         [Column("SupplierID")]
         public int? SupplierId { get; set; }
